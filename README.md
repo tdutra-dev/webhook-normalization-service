@@ -33,9 +33,9 @@ Designed as an extensible integration layer for ecommerce platforms, billing sys
 ---
 
 ## 🏗 Architecture Overview
+![Architecture](./architecture.png)
 
-![Architecture](./webhook%20service%20architecture.png)
-
+---
 
 🔧 Endpoints
 Receive event
