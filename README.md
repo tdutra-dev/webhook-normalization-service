@@ -34,13 +34,7 @@ Designed as an extensible integration layer for ecommerce platforms, billing sys
 
 ## 🏗 Architecture Overview
 
-```mermaid
-flowchart LR
-    A[External Providers] -->|POST /webhook/:provider| B[NestJS Controller]
-    B --> C[Webhook Service]
-    C -->|Normalize Payload| D[Normalizer Service]
-    D --> E[(PostgreSQL)]
-    F[Client/Admin] -->|GET /webhook?search=...| C
+![Architecture](./webhook%20service%20architecture.png)
 
 
 🔧 Endpoints
