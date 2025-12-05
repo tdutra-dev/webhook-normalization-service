@@ -37,6 +37,15 @@ Designed as an extensible integration layer for ecommerce platforms, billing sys
 
 ---
 
+## 🎥 Demo
+
+Short preview of the base workflow: fetch → insert → fetch updated data.
+Even in this minimal example, the system handles normalization and storage, showcasing the project running in real conditions.
+
+![webhook-demo](./webhook.gif)
+
+---
+
 🔧 Endpoints
 Receive event
 POST /webhook/:provider
@@ -44,6 +53,9 @@ POST /webhook/:provider
 Query events
 GET /webhook?page=1&limit=10&provider=shopify&
 search=product
+
+
+---
 
 🛠 Setup & Run
 1. Clone repo
@@ -64,6 +76,9 @@ npm install
 bash
 npm run start:dev
 
+
+---
+
 📌 Next Iterations (roadmap)
 🔔 Add notification engine (email / Slack / Telegram)
 
@@ -74,6 +89,9 @@ npm run start:dev
 📊 Analytics panel with metrics & throughput
 
 🔐 JWT auth & API rate limiting
+
+
+---
 
 👩‍💻 Author
 Tendresse Dutra – Backend & API Engineer
